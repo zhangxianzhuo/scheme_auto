@@ -13,8 +13,8 @@ jobs:
 
       - name: write_to_file
         run: |
-          date +%s >> /tmp/tt
-          git add /tmp/tt
+          date +%s >> tt
+          git add tt
           git commit -m "add file tt"
           git push
         
