@@ -6,7 +6,7 @@ on:
 
 jobs:
   test_schedule:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: create_file_tt
         run: touch tt
