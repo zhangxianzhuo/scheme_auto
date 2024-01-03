@@ -11,4 +11,4 @@ jobs:
       - name: create_file_tt
         run: touch tt
       - name: loop_write_tt
-        run: date +%s >> tt
+        run: date +%s >> .github/workflows/tt
