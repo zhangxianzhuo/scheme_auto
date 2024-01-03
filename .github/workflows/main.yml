@@ -13,8 +13,8 @@ jobs:
 
       - name: write_to_file
         run: |
-          date +%s >> tt
           git pull
+          date +%s >> tt
           git add tt
           git config --global user.email "zhangxianzhuo@hotmail.com"
           git config --global user.name "zhangxianzhuo"
