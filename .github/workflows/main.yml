@@ -2,7 +2,7 @@ name: schedule_by_miniute
 on:
   push:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '0 23 */1 * *'
 
 jobs:
   test_schedule:
