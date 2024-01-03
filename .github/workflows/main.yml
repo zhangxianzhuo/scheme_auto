@@ -8,7 +8,9 @@ jobs:
   test_schedule:
     runs-on: ubuntu-latest
     steps:
-      - name: loop_write_tt
+      - name: check
+        uses: actions/checkout@v2
         with: 
-          token: ${{secrets.zhangxianzhuo}}
+          token: ${{secrets.auto_write}}
+      - name: write_to_file
         run: date +%s >> tt
