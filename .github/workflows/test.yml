@@ -1,0 +1,21 @@
+name: test
+on:
+  push:
+  schedule:
+    - cron: '*/10 * * * *'
+
+jobs:
+  job_id1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: write-file
+        run: |
+          git pull
+          date >> file
+          git add file
+          git config --global user.email "zhangxianzhuo@hotmail.com"
+          git config --global user.name "zhangxianzhuo"
+          git commit -m "modify file content"
+          git push
