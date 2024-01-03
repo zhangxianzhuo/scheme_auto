@@ -8,7 +8,5 @@ jobs:
   test_schedule:
     runs-on: ubuntu-latest
     steps:
-      - name: create_file_tt
-        run: touch tt
       - name: loop_write_tt
-        run: date +%s >> .github/workflows/tt
+        run: date +%s >> tt
