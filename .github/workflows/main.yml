@@ -10,7 +10,11 @@ jobs:
     steps:
       - name: check
         uses: actions/checkout@v2
-        with: 
-          token: ${{secrets.auto_write}}
+
       - name: write_to_file
-        run: date +%s >> tt
+        run:
+          date +%s >> /tmp/tt
+          git add /tmp/tt
+          git commit -m "add file tt"
+          git push
+        
