@@ -9,4 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: loop_write_tt
+        with: 
+          token: ${{secrets.zhangxianzhuo}}
         run: date +%s >> tt
