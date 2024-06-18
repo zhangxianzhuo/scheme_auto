@@ -1,0 +1,16 @@
+name: timezone-and-schedule
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 10 18 * *'
+
+jobs:
+  show_data:
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: set timezone
+        run: timedatectl set-timezone Asia/Shanghai
+      - name: show current day
+        run: date +%F_%H:%M:%S
+    
