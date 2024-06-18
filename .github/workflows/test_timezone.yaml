@@ -3,7 +3,7 @@ name: timezone-and-schedule
 on:
   workflow_dispatch:
   schedule:
-    - cron: '18 4 18 * *'
+    - cron: '23 4 18 * *'
 
 jobs:
   show_data:
