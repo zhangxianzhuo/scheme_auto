@@ -1,9 +1,9 @@
-name: timezone-and-schedule
+name: timezone
 
 on:
-  # workflow_dispatch:
+  workflow_dispatch:
   schedule:
-    - cron: '55 12 * * *'
+    - cron: '05 13 * * *'
 
 jobs:
   show_data:
