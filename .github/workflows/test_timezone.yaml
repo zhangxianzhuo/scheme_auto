@@ -11,8 +11,6 @@ jobs:
     steps:
       - name: checkout
         run: actions/checkout@v4
-      # - name: set timezone
-        # run: sudo timedatectl set-timezone Asia/Shanghai
       - name: show current day
         # run: date +%F_%H:%M:%S
         run: date -u
