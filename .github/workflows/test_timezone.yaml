@@ -3,7 +3,7 @@ name: timezone-and-schedule
 on:
   # workflow_dispatch:
   schedule:
-    - cron: '18 11 * * *'
+    - cron: '20 11 * * *'
 
 jobs:
   show_data:
@@ -11,8 +11,8 @@ jobs:
     steps:
       - name: checkout
         run: actions/checkout@v4
-      - name: set timezone
-        run: sudo timedatectl set-timezone Asia/Shanghai
+      # - name: set timezone
+        # run: sudo timedatectl set-timezone Asia/Shanghai
       - name: show current day
         run: date +%F_%H:%M:%S
     
