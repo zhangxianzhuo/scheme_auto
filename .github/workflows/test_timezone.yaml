@@ -14,5 +14,6 @@ jobs:
       # - name: set timezone
         # run: sudo timedatectl set-timezone Asia/Shanghai
       - name: show current day
-        run: date +%F_%H:%M:%S
+        # run: date +%F_%H:%M:%S
+        run: date -u
     
